@@ -1,3 +1,19 @@
+/* ------------------------ 
+   Google Fonts読み込み
+-------------------------*/
+/* Loto */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap');
+/* Dancing Script */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/* ------------------------ 
+   root設定
+-------------------------*/
+:root {
+  --base-font-family: "Lato", sans-serif;
+  --accent-font-family: "Dancing Script", cursive;
+}
+
 /* PC、スマホ共通スタイル */
 * {
   box-sizing: border-box;
@@ -11,22 +27,25 @@ p {
 
 body {
   margin: 0 auto 0 auto;
-  font-family: "Source Sans Pro", "Noto Sans JP", Meiryo, Arial, serif;
+  /* font-family: "Source Sans Pro", "Noto Sans JP", Meiryo, Arial, serif; */
 }
 
 .index-h2 {
   font-size: 24px;
   text-align: start;
   padding: 15px 15px 0 15px;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
+  font-family: var(--accent-font-family);
   color: #504B38;
   margin-top: 0;
   margin-bottom: 10px;
 }
 
 h1 {
+  /* font-size: 24px; */
   font-size: 24px;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
+  font-family: var(--accent-font-family);
   color: #504B38;
 }
 
@@ -83,7 +102,7 @@ header {
 #nav-sp nav li>a>span {
   text-decoration: none;
   color: white;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
   font-size: 24px;
   text-decoration: none;
 }
@@ -96,7 +115,7 @@ header {
   list-style: none;
   text-decoration: none;
   color: white;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
   font-size: 16px;
   height: 44px;
   margin: 0 20px 0 20px;
@@ -239,7 +258,7 @@ footer {
   width: 100%;
   text-decoration: none;
   color: white;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
   font-size: 16px;
 }
 
@@ -266,7 +285,7 @@ footer {
   border-left: solid 3px black;
   color: #504B38;
   transition: .4s;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
   font-size: 16px;
 
 }
@@ -391,7 +410,7 @@ a.btn-flat:hover {
   margin-bottom: 50px;
   background-color: #EBE5C2;
 
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
 }
 
 .circle p {
@@ -407,7 +426,7 @@ a.btn-flat:hover {
   font-size: 24px;
   text-align: start;
   padding: 15px 15px 0 15px;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
   color: #504B38;
   margin: 0;
 }
@@ -416,7 +435,7 @@ a.btn-flat:hover {
   font-size: 16px;
   text-align: start;
   padding: 0 15px 0 15px;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
   color: #504B38;
   margin: 0;
 }
@@ -442,7 +461,7 @@ a.btn-flat:hover {
   font-size: 24px;
   text-align: start;
   padding: 15px 15px 0 15px;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
   color: #504B38;
   margin: 0;
 }
@@ -479,7 +498,7 @@ a.btn-flat:hover {
   font-size: 24px;
   text-align: start;
   padding: 15px 15px 0 15px;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
   color: #504B38;
   margin: 0;
 }
@@ -494,7 +513,7 @@ a.btn-flat:hover {
   font-size: 24px;
   text-align: start;
   padding: 15px 15px 0 15px;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
   color: #504B38;
   margin: 0;
 }
@@ -514,7 +533,7 @@ a.btn-flat:hover {
   text-align: start;
   font-size: 20px;
   padding: 15px;
-  font-family: "Yu Mincho";
+  /* font-family: "Yu Mincho"; */
   color: #504B38;
   font-weight: bold;
   margin-bottom: 0;
@@ -582,7 +601,7 @@ a.btn-flat:hover {
   #nav-pc {
     display: block;
     font-size: 16px;
-    font-family: "Yu Mincho";
+    /* font-family: "Yu Mincho"; */
 
   }
 
@@ -721,7 +740,7 @@ a.btn-flat:hover {
     text-decoration: none;
     font-size: 24px;
     color: white;
-    font-family: "Yu Mincho";
+    /* font-family: "Yu Mincho"; */
     margin-right: 10px;
     margin-left: 10px;
   }
