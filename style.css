@@ -1,0 +1,780 @@
+/* PC、スマホ共通スタイル */
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 18px;
+  padding: 15px;
+}
+
+body {
+  margin: 0 auto 0 auto;
+  font-family: "Source Sans Pro", "Noto Sans JP", Meiryo, Arial, serif;
+}
+
+.index-h2 {
+  font-size: 24px;
+  text-align: start;
+  padding: 15px 15px 0 15px;
+  font-family: "Yu Mincho";
+  color: #504B38;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: "Yu Mincho";
+  color: #504B38;
+}
+
+#title {
+  text-decoration: none;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  background-color: #FAF7F0;
+  padding: 15px;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+
+/* スマホ用ナビゲーション */
+#menu-sp {
+  background-color: #FAF7F0;
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#nav-sp {
+  background-color: #6f4d3e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 100;
+}
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+#nav-sp nav ul {
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+#nav-sp nav li>a>span {
+  text-decoration: none;
+  color: white;
+  font-family: "Yu Mincho";
+  font-size: 24px;
+  text-decoration: none;
+}
+
+#nav-sp nav a {
+  text-decoration: none;
+}
+
+#nav-sp nav li>a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-family: "Yu Mincho";
+  font-size: 16px;
+  height: 44px;
+  margin: 0 20px 0 20px;
+
+}
+
+#nav-sp .nav-menu {
+  background-image: url("image/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+
+}
+
+/* メインビジュアル */
+#main-vidual {
+  background-color: #FAF7F0;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+#main-vidual>div>p {
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  text-align: start;
+}
+
+.carousel {
+  padding: 30px 0;
+
+
+  .carouselImg {
+    width: 100%;
+    max-height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* ヘルシーフード */
+#healthy-food {
+  background-color: #F6F0F0;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 20px;
+
+}
+
+#healthy-food>h2 {
+  margin-top: 0px;
+  padding-top: 15px;
+}
+
+
+
+#healthy-photo {
+  width: 50%;
+
+}
+
+/* メニュー */
+#menu {
+  background-color: #FAF7F0;
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+#menu-photo {
+  width: 50%;
+
+}
+
+/* ブログ */
+#blog {
+  background-color: #F6F0F0;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#blog-photo {
+  width: 50%;
+
+}
+
+/* 店舗情報 */
+#store {
+  background-color: #FAF7F0;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#store-photo {
+  width: 50%;
+
+}
+
+/* スタッフ採用 */
+#staff-recruitment {
+  background-color: #F6F0F0;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#staff-photo {
+  width: 50%;
+
+}
+
+/* コンタクト */
+.contact {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+/* フッター */
+footer {
+  padding: 20px 0 20px 0;
+  background-color: #6f4d3e;
+  text-align: center;
+}
+
+#footer-link {
+  width: 100%;
+}
+
+#footer-link>ul {
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+#footer-link>ul>li>a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-family: "Yu Mincho";
+  font-size: 16px;
+}
+
+#footer-link a:hover {
+  text-decoration: underline;
+}
+
+.sns-btn a img {
+  height: 25px;
+  padding: 0 10px;
+
+}
+
+
+
+/* ボタン */
+.btn-partial-line {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  border-bottom: solid 3px black;
+  border-left: solid 3px black;
+  color: #504B38;
+  transition: .4s;
+  font-family: "Yu Mincho";
+  font-size: 16px;
+
+}
+
+
+.btn-partial-line:hover {
+  padding-left: 0.7em;
+  padding-right: 0.3em;
+}
+
+/* 問い合わせボタン */
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/*その他と主な共通部分は省略*/
+
+a.btn-flat {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: black;
+  border-radius: 0;
+  background: white;
+  border: solid;
+}
+
+a.btn-flat span {
+  position: relative;
+}
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background: black;
+
+}
+
+a.btn-flat:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
+}
+
+a.btn-flat:hover {
+  color: white;
+}
+
+#footer-title,
+#nav-pc {
+  display: none;
+}
+
+/* healthy foodページ */
+#about-healthy-food {
+  background-color: #F6F0F0;
+}
+
+.circle-title {
+  display: flex;
+}
+
+.circle {
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  line-height: 120px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #EBE5C2;
+
+  font-family: "Yu Mincho";
+}
+
+.circle p {
+  font-size: 24px;
+  color: #504B38;
+}
+
+.circle a {
+  text-decoration: none;
+}
+
+.healty-h2 {
+  font-size: 24px;
+  text-align: start;
+  padding: 15px 15px 0 15px;
+  font-family: "Yu Mincho";
+  color: #504B38;
+  margin: 0;
+}
+
+.healty-span {
+  font-size: 16px;
+  text-align: start;
+  padding: 0 15px 0 15px;
+  font-family: "Yu Mincho";
+  color: #504B38;
+  margin: 0;
+}
+
+#healtyfood p {
+  line-height: 2;
+}
+
+#nutrition p {
+  line-height: 2;
+}
+
+#point p {
+  line-height: 2;
+}
+
+/* menuページ */
+#menu-page {
+  background-color: #F6F0F0;
+}
+
+.menu-h2 {
+  font-size: 24px;
+  text-align: start;
+  padding: 15px 15px 0 15px;
+  font-family: "Yu Mincho";
+  color: #504B38;
+  margin: 0;
+}
+
+.menu-explain1 h3 {
+  text-align: start;
+  font-size: 20px;
+  padding: 15px;
+  color: #504B38;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.menu-explain1 {
+  text-align: center;
+}
+
+.menu-explain p {
+  text-align: start;
+}
+
+.menu-explain p span {
+  font-size: 18px;
+  color: #504B38;
+  font-weight: bold;
+}
+
+/* ブログページ */
+#blog-page {
+  background-color: #F6F0F0;
+}
+
+.blog-h2 {
+  font-size: 24px;
+  text-align: start;
+  padding: 15px 15px 0 15px;
+  font-family: "Yu Mincho";
+  color: #504B38;
+  margin: 0;
+}
+
+/* ストアページ */
+#store-page {
+  background-color: #F6F0F0;
+  text-align: center;
+}
+
+.store-h2 {
+  font-size: 24px;
+  text-align: start;
+  padding: 15px 15px 0 15px;
+  font-family: "Yu Mincho";
+  color: #504B38;
+  margin: 0;
+}
+
+#store-page img {
+  width: 70%;
+  height: auto;
+}
+
+#store-page p {
+  text-align: start;
+  line-height: 2;
+
+}
+
+#store-page h3 {
+  text-align: start;
+  font-size: 20px;
+  padding: 15px;
+  font-family: "Yu Mincho";
+  color: #504B38;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#information {
+  text-align: center;
+}
+
+#information-table {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tableheader {
+  text-align: left;
+  padding: 20px 20px 20px 20px;
+  border-bottom-color: #504B38;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 150px;
+  font-size: 18px;
+}
+
+.tableheader-first {
+  border-top-color: #504B38;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.cell {
+  width: 540px;
+  text-align: start;
+  padding: 30px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  font-size: 18px;
+}
+
+.cell-first {
+  border-top-color: #ececec;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+#information div {
+  align-content: top;
+}
+
+/* #store-page iframe {
+  margin-top: 40px;
+} */
+
+/* PC画面 */
+@media screen and (min-width:768px) {
+
+
+  /* ヘッダー */
+  #nav-sp,
+  #menu-sp {
+    display: none;
+  }
+
+  #nav-pc {
+    display: block;
+    font-size: 16px;
+    font-family: "Yu Mincho";
+
+  }
+
+  #nav-pc ul {
+    display: flex;
+    padding-left: 0;
+  }
+
+  #nav-pc li {
+    list-style: none;
+    margin-left: 20px;
+  }
+
+  #nav-pc a {
+    text-decoration: none;
+    color: #504B38;
+  }
+
+  #nav-pc a:hover {
+    text-decoration: underline;
+  }
+
+  /* ヘルシーフードについて */
+  #healthy-photo {
+    margin-left: 20px;
+  }
+
+  #healty-food-message {
+    display: flex;
+    text-align: start;
+  }
+
+  #healty-food-message>div {
+    align-content: center;
+  }
+
+  #healty-food-message>div>div {
+    text-align: end;
+  }
+
+  /* メニュー */
+  #menu-photo {
+    margin-right: 20px;
+  }
+
+  #menu-message {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: start;
+  }
+
+  #menu-message>div {
+    align-content: center;
+  }
+
+  #menu-message>div>div {
+    text-align: start;
+  }
+
+  /* ブログ */
+  #blog-photo {
+    margin-left: 20px;
+  }
+
+  #blog-message {
+    display: flex;
+    text-align: start;
+  }
+
+  #blog-message>div {
+    align-content: center;
+  }
+
+  #blog-message>div>div {
+    text-align: end;
+  }
+
+  /* 店舗情報 */
+  #store-photo {
+    margin-right: 20px;
+  }
+
+  #store-message {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: start;
+  }
+
+  #store-message>div {
+    align-content: center;
+  }
+
+  #store-message>div>div {
+    text-align: start;
+  }
+
+  /* スタッフ採用 */
+  #staff-photo {
+    margin-left: 20px;
+  }
+
+  #staff-message {
+    display: flex;
+    text-align: start;
+  }
+
+  #staff-message>div {
+    align-content: center;
+  }
+
+  #staff-message>div>div {
+    text-align: end;
+  }
+
+  /* フッター */
+  footer {
+    display: flex;
+  }
+
+  .contact {
+    order: 1;
+    width: 20%;
+    overflow-x: visible;
+  }
+
+  .sns-btn {
+    width: 20%;
+    order: 2;
+    text-align: end;
+    align-content: end;
+  }
+
+
+  #footer-title {
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-family: "Yu Mincho";
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #footer-link a:hover {
+    text-decoration: none;
+  }
+
+  #footer-link li a:hover {
+    text-decoration: underline;
+  }
+
+  #footer-link ul {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  #footer-link li {
+    margin-left: 20px;
+    align-content: center;
+    overflow-x: visible;
+  }
+
+  /* menuページ */
+  .menu-explain1 {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-explain1 img {
+    margin-left: 15px;
+  }
+
+
+  .menu-left {
+    margin-right: 30px;
+    margin-left: 15px;
+  }
+
+  .menu-right {
+    margin-left: 30px;
+    margin-right: 15px;
+  }
+
+  /* storeページ */
+  #information {
+    display: flex;
+    align-content: end;
+  }
+
+  #information div {
+    align-content: center;
+  }
+}

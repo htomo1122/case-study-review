@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NATURAL KITCHEN -Menu-</title>
+    <!-- slickの読み込み -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- AOSの読み込み -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <a href="index.html" id="title">
+        <h1>NATURAL KITHEN</h1>
+      </a>
+      <!-- スマホ用メニューボタン -->
+      <button
+        id="menu-sp"
+        onclick="document.getElementById('nav-sp').style.display='block'"
+      >
+        <img src="image/button-menu.png" alt="ナビゲーションを開く" />
+      </button>
+      <!-- スマホ用ナビゲーション -->
+      <div id="nav-sp">
+        <button
+          id="close"
+          onclick="document.getElementById('nav-sp').style.display='none'"
+        >
+          <img src="image/button-close.png" alt="ナビゲーションを閉じる" />
+        </button>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="index.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                ><span>NATURAL KITHEN</span></a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="healty.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Healthy Food</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="menu.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="blog.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="store.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Store Information</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="staff.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Staff Recruitment</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <a href="contact.html" class="btn btn-flat"><span>Contact</span></a>
+        </div>
+
+        <div class="sns-btn">
+          <a href=""
+            ><img src="image/ico-facebook-br.png" alt="facebookのアイコン"
+          /></a>
+          <a href=""
+            ><img src="image/ico-instagram-br.png" alt="instagramのアイコン"
+          /></a>
+          <a href=""><img src="image/ico-x-br.png" alt="Xのアイコン" /></a>
+        </div>
+      </div>
+
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <ul>
+          <li><a href="healty.html">Healthy Food</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="store.html">Store Information</a></li>
+          <li><a href="staff.html">Staff Recruitment</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- メインセクション -->
+    <section id="menu-page">
+      <h2 class="menu-h2">Menu</h2>
+      <p>
+        健康的で美味しい食事を楽しんでいただくために、当店では栄養バランスにこだわったヘルシーメニューをご用意しております。<br />新鮮な野菜や良質なたんぱく質を使用し、カロリーを抑えつつも満足感のある一皿をお届けします。
+      </p>
+      <article>
+        <div class="menu-explain">
+          <div class="menu-explain1">
+            <div class="menu-left">
+              <h3>オーガニックコーヒー</h3>
+              <img src="image/item-coffee.jpg" alt="オーガニックコーヒー" />
+              <p>
+                <span>￥500</span
+                ><br />自然の恵みをそのまま味わえる、こだわりのオーガニックコーヒーをお届けします。<br />農薬や化学肥料を一切使用せずに育てられたコーヒー豆は、豊かな香りと深いコクが特徴。<br />自然環境にも配慮したサステナブルな方法で生産されており、体にもやさしく安心してお楽しみいただけます。
+              </p>
+            </div>
+            <div class="menu-right">
+              <h3>ブルーベリージュース</h3>
+              <img src="image/item-blueberry.jpg" alt="ブルーベリージュース" />
+              <p>
+                <span>¥760</span
+                ><br />甘酸っぱい爽やかな味わいが魅力のブルーベリージュース。<br />厳選したブルーベリーをたっぷり使用し、自然の甘みとフレッシュな風味をそのままお楽しみいただけます。<br />豊富に含まれるポリフェノールやビタミンが、毎日の健康をサポート。<br />飲みやすくスッキリとした後味で、朝の目覚めやリフレッシュしたい時にもぴったりです。
+              </p>
+            </div>
+          </div>
+          <div class="menu-explain1">
+            <div class="menu-left">
+              <h3>バジルパスタ</h3>
+              <img src="image/item-pasta.jpg" alt="バジルパスタ" />
+              <p>
+                <span>¥1100</span
+                ><br />爽やかなバジルの香りが広がる、風味豊かなバジルパスタをご用意しました。<br />新鮮なバジルをたっぷり使用した自家製ジェノベーゼソースは、濃厚ながらも後味が軽やか。<br />香ばしいナッツとチーズのコクが絶妙に絡み合い、もちもちのパスタとともに贅沢な味わいをお楽しみいただけます。
+              </p>
+            </div>
+            <div class="menu-right">
+              <h3>四季のサラダ</h3>
+              <img src="image/item-salad.jpg" alt="四季のサラダ" />
+              <p>
+                <span>¥760</span
+                ><br />旬の食材をふんだんに使用した、彩り豊かな四季のサラダをご用意しました。<br />季節ごとに厳選した新鮮な野菜やフルーツを組み合わせ、自然の美味しさを存分に味わえる一皿に仕上げています。<br />シャキシャキとした食感とともに、素材本来の風味を引き立てる自家製ドレッシングがアクセント。
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- フッター -->
+    <footer>
+      <div class="contact">
+        <a href="contact.html" class="btn btn-flat"><span>Contact</span></a>
+      </div>
+      <div id="footer-link">
+        <ul>
+          <a href="index.html" id="footer-title">NATURAL KITHEN</a>
+          <li><a href="healty.html">Healthy Food</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="store.html">Store Information</a></li>
+          <li><a href="staff.html">Staff Recruitment</a></li>
+        </ul>
+      </div>
+      <div class="sns-btn">
+        <a href=""
+          ><img src="image/ico-facebook-br.png" alt="facebookのアイコン"
+        /></a>
+        <a href=""
+          ><img src="image/ico-instagram-br.png" alt="instagramのアイコン"
+        /></a>
+        <a href=""><img src="image/ico-x-br.png" alt="Xのアイコン" /></a>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick読み込み -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="script.js"></script>
+
+    <!-- AOSの読み込み -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

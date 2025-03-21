@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NATURAL KITCHEN -Store Information-</title>
+    <!-- slickの読み込み -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- AOSの読み込み -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <a href="index.html" id="title">
+        <h1>NATURAL KITHEN</h1>
+      </a>
+      <!-- スマホ用メニューボタン -->
+      <button
+        id="menu-sp"
+        onclick="document.getElementById('nav-sp').style.display='block'"
+      >
+        <img src="image/button-menu.png" alt="ナビゲーションを開く" />
+      </button>
+      <!-- スマホ用ナビゲーション -->
+      <div id="nav-sp">
+        <button
+          id="close"
+          onclick="document.getElementById('nav-sp').style.display='none'"
+        >
+          <img src="image/button-close.png" alt="ナビゲーションを閉じる" />
+        </button>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="index.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                ><span>NATURAL KITHEN</span></a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="healty.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Healthy Food</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="menu.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="blog.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="store.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Store Information</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="staff.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Staff Recruitment</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <a href="contact.html" class="btn btn-flat"><span>Contact</span></a>
+        </div>
+
+        <div class="sns-btn">
+          <a href=""
+            ><img src="image/ico-facebook-br.png" alt="facebookのアイコン"
+          /></a>
+          <a href=""
+            ><img src="image/ico-instagram-br.png" alt="instagramのアイコン"
+          /></a>
+          <a href=""><img src="image/ico-x-br.png" alt="Xのアイコン" /></a>
+        </div>
+      </div>
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <ul>
+          <li><a href="healty.html">Healthy Food</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="store.html">Store Information</a></li>
+          <li><a href="staff.html">Staff Recruitment</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- メインセクション -->
+    <section id="store-page">
+      <h2 class="store-h2">Store Information</h2>
+      <img src="image/shop-in.jpg" alt="店舗内部写真" />
+      <p>
+        NATURAL
+        KITCHENは、心と体にやさしいオーガニックフードとドリンクを提供するカフェです。<br />私たちは、自然の恵みを大切にし、厳選したオーガニック食材を使用したメニューで、皆さまに健康的で美味しいひとときをお届けしています。<br />
+
+        店内は木の温もりを感じる落ち着いた空間で、ナチュラルな雰囲気に包まれながら、ゆったりとした時間を過ごしていただけます。<br />カラダに優しいオーガニックコーヒーやハーブティー、季節の食材を使ったこだわりのスムージー、新鮮な野菜をふんだんに使用したサラダやプレートメニューなど、心も満たされる料理をご用意しています。<br />
+
+        忙しい日常の中で、少しだけ立ち止まり、自然の味わいを楽しむひとときはいかがでしょうか。<br />NATURAL
+        KITCHEN で、オーガニックの美味しさと、心地よい時間をお楽しみください。
+      </p>
+
+      <h3>information</h3>
+
+      <div id="information">
+        <table id="information-table">
+          <tr>
+            <th class="tableheader tableheader-first">店名</th>
+            <td class="cell cell-first">NATURAL KITCHEN</td>
+          </tr>
+          <tr>
+            <th class="tableheader">設立</th>
+            <td class="cell">
+              〒150-0021<br />
+              東京都渋谷区恵比寿西1-2-3
+            </td>
+          </tr>
+          <tr>
+            <th class="tableheader">アクセス</th>
+            <td class="cell">東急東横線「代官山」駅、1番出口より南へ徒歩6分</td>
+          </tr>
+          <tr>
+            <th class="tableheader">電話/FAX</th>
+            <td class="cell">03-0000-0000/03-0000-0000</td>
+          </tr>
+          <tr>
+            <th class="tableheader">メール</th>
+            <td class="cell">info@example.com</td>
+          </tr>
+          <tr>
+            <th class="tableheader">従業員</th>
+            <td class="cell">25名</td>
+          </tr>
+        </table>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.163495353453!2d139.70618432529673!3d35.64834328178067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b417426f3b1%3A0x5f59b4471831195e!2z44CSMTUwLTAwMjEg5p2x5Lqs6YO95riL6LC35Yy65oG15q-U5a-_6KW_77yR5LiB55uu77yS!5e0!3m2!1sja!2sjp!4v1742485018531!5m2!1sja!2sjp"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+      <div class="contact">
+        <a href="contact.html" class="btn btn-flat"><span>Contact</span></a>
+      </div>
+      <div id="footer-link">
+        <ul>
+          <a href="index.html" id="footer-title">NATURAL KITHEN</a>
+          <li><a href="healty.html">Healthy Food</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="store.html">Store Information</a></li>
+          <li><a href="staff.html">Staff Recruitment</a></li>
+        </ul>
+      </div>
+      <div class="sns-btn">
+        <a href=""
+          ><img src="image/ico-facebook-br.png" alt="facebookのアイコン"
+        /></a>
+        <a href=""
+          ><img src="image/ico-instagram-br.png" alt="instagramのアイコン"
+        /></a>
+        <a href=""><img src="image/ico-x-br.png" alt="Xのアイコン" /></a>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick読み込み -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="script.js"></script>
+
+    <!-- AOSの読み込み -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

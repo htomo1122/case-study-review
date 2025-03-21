@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NATURAL KITCHEN -Healty Food-</title>
+    <!-- slickの読み込み -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- AOSの読み込み -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <a href="index.html" id="title">
+        <h1>NATURAL KITHEN</h1>
+      </a>
+      <!-- スマホ用メニューボタン -->
+      <button
+        id="menu-sp"
+        onclick="document.getElementById('nav-sp').style.display='block'"
+      >
+        <img src="image/button-menu.png" alt="ナビゲーションを開く" />
+      </button>
+      <!-- スマホ用ナビゲーション -->
+      <div id="nav-sp">
+        <button
+          id="close"
+          onclick="document.getElementById('nav-sp').style.display='none'"
+        >
+          <img src="image/button-close.png" alt="ナビゲーションを閉じる" />
+        </button>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="index.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                ><span>NATURAL KITHEN</span></a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="healty.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Healthy Food</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="menu.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="blog.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="store.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Store Information</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a
+                href="staff.html"
+                onclick="document.getElementById('nav-sp').style.display='none'"
+                >Staff Recruitment</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <a href="contact.html" class="btn btn-flat"><span>Contact</span></a>
+        </div>
+
+        <div class="sns-btn">
+          <a href=""
+            ><img src="image/ico-facebook-br.png" alt="facebookのアイコン"
+          /></a>
+          <a href=""
+            ><img src="image/ico-instagram-br.png" alt="instagramのアイコン"
+          /></a>
+          <a href=""><img src="image/ico-x-br.png" alt="Xのアイコン" /></a>
+        </div>
+      </div>
+
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <ul>
+          <li><a href="healty.html">Healthy Food</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="store.html">Store Information</a></li>
+          <li><a href="staff.html">Staff Recruitment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- メインセクション -->
+    <section id="about-healthy-food">
+      <div class="circle-title">
+        <div class="circle">
+          <a href="healty.html#healtyfood">
+            <p>Health Food</p>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="healty.html#nutrition">
+            <p>Nutrition</p>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="healty.html#point">
+            <p>Point</p>
+          </a>
+        </div>
+      </div>
+      <div id="healtyfood">
+        <h2 class="healty-h2">
+          Healthy Food<span class="healty-span"
+            >～ヘルシーフードについて～</span
+          >
+        </h2>
+        <div>
+          <p>
+            ヘルシーフードとは、健康に良いとされる食品や食事のことを指します。<br />栄養バランスが取れており、体に必要なビタミンやミネラルを含んでいることが特徴です。<br />近年では、健康意識の高まりにより、多くの人々がヘルシーフードを意識した食生活を送るようになっています。
+          </p>
+        </div>
+      </div>
+      <div id="nutrition">
+        <h2 class="healty-h2">
+          Nutrition<span class="healty-span">～栄養素～</span>
+        </h2>
+
+        <div>
+          <p>
+            野菜や果物はビタミン、ミネラル、食物繊維が豊富で、抗酸化作用があり免疫力向上に役立ちます。<br />全粒穀物は白米よりも玄米や全粒小麦の方が栄養価が高く、血糖値の上昇を抑え、腹持ちが良いとされています。<br />良質なたんぱく質としては、魚、鶏肉、大豆製品などがあり、筋肉の維持や新陳代謝の向上に寄与します。<br />健康的な脂質はナッツ類、アボカド、オリーブオイルなどに含まれ、悪玉コレステロールを減らし心臓病のリスクを下げる効果があります。
+          </p>
+        </div>
+      </div>
+      <div id="point">
+        <h2 class="healty-h2">
+          Point<span class="healty-span">～取り入れるポイント～</span>
+        </h2>
+
+        <div>
+          <p>
+            加工食品を減らし、添加物や過剰な塩分・糖分を避けることが大切です。<br />バランスの良い食事を心がけ、偏りのない食生活を意識しましょう。<br />また、調理法も重要で、揚げ物よりも蒸し料理や焼き料理を取り入れるとより健康的です。<br />水分補給も忘れず、水やハーブティーを積極的に飲むことで体の調子を整えることができます。<br />
+
+            ヘルシーフードを日常的に取り入れることで、健康的な体を維持し、生活の質を向上させることができます。<br />無理なく続けられる方法を見つけ、自分に合った健康的な食生活を送りましょう。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+      <div class="contact">
+        <a href="contact.html" class="btn btn-flat"><span>Contact</span></a>
+      </div>
+      <div id="footer-link">
+        <ul>
+          <a href="index.html" id="footer-title">NATURAL KITHEN</a>
+          <li><a href="healty.html">Healthy Food</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="store.html">Store Information</a></li>
+          <li><a href="staff.html">Staff Recruitment</a></li>
+        </ul>
+      </div>
+      <div class="sns-btn">
+        <a href=""
+          ><img src="image/ico-facebook-br.png" alt="facebookのアイコン"
+        /></a>
+        <a href=""
+          ><img src="image/ico-instagram-br.png" alt="instagramのアイコン"
+        /></a>
+        <a href=""><img src="image/ico-x-br.png" alt="Xのアイコン" /></a>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick読み込み -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="script.js"></script>
+
+    <!-- AOSの読み込み -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
