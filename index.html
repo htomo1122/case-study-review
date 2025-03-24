@@ -27,89 +27,33 @@
         <h1>NATURAL KITHEN</h1>
       </a>
       <!-- スマホ用メニューボタン -->
-      <button
+      <div class="sp-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- <button
         id="menu-sp"
         onclick="document.getElementById('nav-sp').style.display='block'"
       >
         <img src="image/button-menu.png" alt="ナビゲーションを開く" />
-      </button>
+      </button> -->
       <!-- スマホ用ナビゲーション -->
-      <div id="nav-sp">
-        <button
+      <!-- <div id="nav-sp"> -->
+      <!-- <button
           id="close"
           onclick="document.getElementById('nav-sp').style.display='none'"
         >
           <img src="image/button-close.png" alt="ナビゲーションを閉じる" />
-        </button>
-        <nav>
-          <ul>
-            <li>
-              <a
-                href="index.html"
-                onclick="document.getElementById('nav-sp').style.display='none'"
-                ><span>NATURAL KITHEN</span></a
-              >
-            </li>
-            <li class="nav-menu">
-              <a
-                href="healty.html"
-                onclick="document.getElementById('nav-sp').style.display='none'"
-                >Healthy Food</a
-              >
-            </li>
-            <li class="nav-menu">
-              <a
-                href="menu.html"
-                onclick="document.getElementById('nav-sp').style.display='none'"
-                >Menu</a
-              >
-            </li>
-            <li class="nav-menu">
-              <a
-                href="blog.html"
-                onclick="document.getElementById('nav-sp').style.display='none'"
-                >Blog</a
-              >
-            </li>
-            <li class="nav-menu">
-              <a
-                href="store.html"
-                onclick="document.getElementById('nav-sp').style.display='none'"
-                >Store Information</a
-              >
-            </li>
-            <li class="nav-menu">
-              <a
-                href="staff.html"
-                onclick="document.getElementById('nav-sp').style.display='none'"
-                >Staff Recruitment</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <div class="contact">
-          <a href="contact.html" class="btn btn-flat"><span>Contact</span></a>
-        </div>
-
-        <div class="sns-btn">
-          <a href=""
-            ><img src="image/ico-facebook-br.png" alt="facebookのアイコン"
-          /></a>
-          <a href=""
-            ><img src="image/ico-instagram-br.png" alt="instagramのアイコン"
-          /></a>
-          <a href=""><img src="image/ico-x-br.png" alt="Xのアイコン" /></a>
-        </div>
-      </div>
-
+        </button> -->
       <!-- PC用ナビゲーション -->
       <nav id="nav-pc">
         <ul>
-          <li><a href="healty.html">Healthy Food</a></li>
+          <li><a href="healty.html">AboutMe</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="store.html">Store Information</a></li>
-          <li><a href="staff.html">Staff Recruitment</a></li>
+          <li><a href="store.html">Info</a></li>
+          <li><a href="staff.html">Recruit</a></li>
         </ul>
       </nav>
     </header>
@@ -252,6 +196,68 @@
         <a href=""><img src="image/ico-x-br.png" alt="Xのアイコン" /></a>
       </div>
     </footer>
+
+    <!-- SPハンバーガーメニュー -->
+    <nav id="nav-sp">
+      <ul>
+        <li>
+          <a
+            href="index.html"
+            onclick="document.getElementById('nav-sp').style.display='none'"
+            ><span>NATURAL KITHEN</span></a
+          >
+        </li>
+        <li class="nav-menu">
+          <a
+            href="healty.html"
+            onclick="document.getElementById('nav-sp').style.display='none'"
+            >Healthy Food</a
+          >
+        </li>
+        <li class="nav-menu">
+          <a
+            href="menu.html"
+            onclick="document.getElementById('nav-sp').style.display='none'"
+            >Menu</a
+          >
+        </li>
+        <li class="nav-menu">
+          <a
+            href="blog.html"
+            onclick="document.getElementById('nav-sp').style.display='none'"
+            >Blog</a
+          >
+        </li>
+        <li class="nav-menu">
+          <a
+            href="store.html"
+            onclick="document.getElementById('nav-sp').style.display='none'"
+            >Store Information</a
+          >
+        </li>
+        <li class="nav-menu">
+          <a
+            href="staff.html"
+            onclick="document.getElementById('nav-sp').style.display='none'"
+            >Staff Recruitment</a
+          >
+        </li>
+      </ul>
+      <div class="contact">
+        <a href="contact.html" class="btn btn-flat"><span>Contact</span></a>
+      </div>
+
+      <div class="sns-btn">
+        <a href=""
+          ><img src="image/ico-facebook-br.png" alt="facebookのアイコン"
+        /></a>
+        <a href=""
+          ><img src="image/ico-instagram-br.png" alt="instagramのアイコン"
+        /></a>
+        <a href=""><img src="image/ico-x-br.png" alt="Xのアイコン" /></a>
+      </div>
+    </nav>
+
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
