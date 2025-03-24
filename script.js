@@ -1,10 +1,8 @@
 $(function () {
-  $(".btn-trigger").on("click", function () {
-    if ($("#nav-sp").css("display") === "none") {
-      $("#nav-sp").css("display", "block");
-    } else {
-      $("#nav-sp").css("display", "none");
-    }
+  $(".sp-menu-btn").on("click", function () {
+    $("#nav-sp").css("display") === "none"
+      ? $("#nav-sp").css("display", "block")
+      : $("#nav-sp").css("display", "none");
 
     $(this).toggleClass("active");
     return false;
