@@ -1,5 +1,19 @@
+/* ------------------------ 
+   Google Fonts読み込み
+-------------------------*/
+/* Loto */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap');
+/* Dancing Script */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/* ------------------------ 
+   root設定
+-------------------------*/
+:root {
+  font-size: 12px;
+  --base-font-family: "Lato", sans-serif;
+  --accent-font-family: "Dancing Script", cursive;
+}
 
 /* PC、スマホ共通スタイル */
 * {
@@ -7,14 +21,9 @@
   overflow-x: hidden;
 }
 
-:root {
-  font-size: 12px;
-  --base-color: #FAF7F0;
-  --header-font: "Dancing Script", cursive;
-}
-
 p {
   font-size: 1.0rem;
+  /* 単位をremに変更 */
   padding: 15px;
   text-align: left;
   max-width: 300px;
@@ -22,16 +31,17 @@ p {
 }
 
 body {
-  margin: 0 auto 0 auto;
-  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+  /* 省略形に変更 */
+  font-family: var(--accent-font-family);
+  /* 変数で定義 */
 }
 
 .index-h2 {
   font-size: 24px;
   text-align: start;
   padding: 15px 15px 0 15px;
-  font-family: "Dancing Script", cursive;
-  ;
+  /* font-family: "Dancing Script", cursive; */
   color: #504B38;
   margin-top: 0;
   margin-bottom: 10px;
@@ -41,6 +51,7 @@ h1 {
   font-size: 24px;
   font-family: var(--header-font);
   color: #504B38;
+  margin: 0;
 }
 
 #title {
@@ -51,14 +62,15 @@ h1 {
 header {
   display: flex;
   background-color: var(--base-color);
-  padding: 5px 10px;
+  padding: 0 10px;
   max-width: 100%;
   justify-content: space-between;
+  padding: 10px 5px;
 }
 
 
 /* スマホ用ナビゲーション */
-#menu-sp {
+/* #menu-sp {
   background-color: var(--base-color);
   display: block;
   background-color: transparent;
@@ -67,22 +79,22 @@ header {
   position: absolute;
   top: 5px;
   right: 10px;
-}
+} */
 
 /*=============================
-.btn-trigger
+ハンバーガーメニューー
 =============================*/
-.btn-trigger {
+.sp-menu-btn {
   position: relative;
   width: 25px;
   height: 22px;
   cursor: pointer;
   z-index: 999;
-  top: 17px;
+  top: 3px;
   right: 10px;
 }
 
-.btn-trigger span {
+.sp-menu-btn span {
   position: absolute;
   left: 0;
   width: 100%;
@@ -91,39 +103,35 @@ header {
   border-radius: 4px;
 }
 
-.btn-trigger,
-.btn-trigger span {
+.sp-menu-btn,
+.sp-menu-btn span {
   display: inline-block;
   transition: all .5s;
   box-sizing: border-box;
 }
 
-.btn-trigger span:nth-of-type(1) {
+.sp-menu-btn span:nth-of-type(1) {
   top: 0;
 }
 
-.btn-trigger span:nth-of-type(2) {
+.sp-menu-btn span:nth-of-type(2) {
   top: 10px;
 }
 
-.btn-trigger span:nth-of-type(3) {
+.sp-menu-btn span:nth-of-type(3) {
   bottom: 0;
 }
 
-
-/*=============================
-#btn01
-=============================*/
-#btn01.active span:nth-of-type(1) {
+.sp-menu-btn.active span:nth-of-type(1) {
   -webkit-transform: translateY(10px) rotate(-45deg);
   transform: translateY(10px) rotate(-45deg);
 }
 
-#btn01.active span:nth-of-type(2) {
+.sp-menu-btn.active span:nth-of-type(2) {
   opacity: 0;
 }
 
-#btn01.active span:nth-of-type(3) {
+.sp-menu-btn.active span:nth-of-type(3) {
   -webkit-transform: translateY(-10px) rotate(45deg);
   transform: translateY(-10px) rotate(45deg);
 }
@@ -137,7 +145,6 @@ header {
   height: 100%;
   display: none;
   z-index: 100;
-  opacity: 0.9;
 }
 
 #close {
@@ -148,12 +155,12 @@ header {
   border: none;
 }
 
-#nav-sp nav ul {
+#nav-sp ul {
   padding-left: 0;
   margin-bottom: 30px;
 }
 
-#nav-sp nav li>a>span {
+#nav-sp li>a>span {
   text-decoration: none;
   color: white;
   font-family: "Yu Mincho";
@@ -161,11 +168,11 @@ header {
   text-decoration: none;
 }
 
-#nav-sp nav a {
+#nav-sp a {
   text-decoration: none;
 }
 
-#nav-sp nav li>a {
+#nav-sp li>a {
   list-style: none;
   text-decoration: none;
   color: white;
@@ -645,6 +652,14 @@ a.btn-flat:hover {
 /* PC画面 */
 @media screen and (min-width:768px) {
 
+  header {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+
+  }
 
   /* ヘッダー */
   #nav-sp,
@@ -652,30 +667,57 @@ a.btn-flat:hover {
     display: none;
   }
 
+  /*=============================
+ハンバーガーメニューー
+=============================*/
+  .sp-menu-btn {
+    display: none;
+  }
+
   #nav-pc {
     display: block;
-    font-size: 16px;
-    font-family: "Yu Mincho";
-
+    font-size: 24px;
+    font-family: var(--accent-font-family);
   }
 
   #nav-pc ul {
     display: flex;
     padding-left: 0;
+    margin: 0;
   }
 
   #nav-pc li {
     list-style: none;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    margin: 0 20px
   }
 
   #nav-pc a {
     text-decoration: none;
     color: #504B38;
+    position: relative;
   }
 
-  #nav-pc a:hover {
-    text-decoration: underline;
+  #nav-pc a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の左端*/
+    transition: transform 0.3s;
+    /*変形の時間*/
+  }
+
+  #nav-pc a:hover::after {
+    transform: scale(1, 1);
+    /*ホバー後、x軸方向に1（相対値）伸長*/
+    transform-origin: left top;
+    /*右から左に向かう*/
   }
 
   /* ヘルシーフードについて */
